@@ -2,6 +2,9 @@
 #include <string>
 #include <fstream>
 using namespace std;
+template<class T> class Matrix;
+template<class T> ostream& operator<< (ostream& out, const Matrix<T>& buf);
+
 template <typename type>
 class Matrix
 {
