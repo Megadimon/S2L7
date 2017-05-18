@@ -109,8 +109,9 @@ public:
 		}
 		else return false;
 	}
-	template <typename type> friend ostream& operator << (ostream& out, const Matrix<type> & buf);
-	template <typename type> friend istream& operator >> (istream& in, Matrix<type> & buf);
+	template <typename K>friend ostream& operator << (ostream& out, const Matrix<K> & buf);
+	template <typename U> friend istream& operator >> (istream& in, Matrix<U> & buf);
+	
 
 };
 template <typename type> istream & operator >> (istream & in, Matrix<type> & buf)
